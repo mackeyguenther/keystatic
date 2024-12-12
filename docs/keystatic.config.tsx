@@ -259,7 +259,7 @@ export default config({
     pages: collection({
       label: 'Documentation',
       slugField: 'title',
-      entryLayout: 'content',
+      // entryLayout: 'content',
       format: { contentField: 'content' },
       path: 'src/content/pages/**',
       previewUrl: makePreviewUrl('/docs/{slug}'),
@@ -285,7 +285,7 @@ export default config({
       label: 'Blog',
       slugField: 'title',
       path: 'src/content/blog/**',
-      entryLayout: 'content',
+      // entryLayout: 'content',
       format: {
         contentField: 'content',
       },
@@ -366,7 +366,7 @@ export default config({
       slugField: 'title',
       path: 'src/content/projects/*',
       format: { contentField: 'content' },
-      entryLayout: 'content',
+      // entryLayout: 'content',
       columns: ['title', 'type', 'url', 'repoUrl', 'sortIndex'],
       schema: {
         title: fields.slug({ name: { label: 'Title' } }),
